@@ -1,0 +1,94 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic Styling */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.name-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.name-heading img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 18px;
+  color: #ccc;
+  margin-left: 10px;
+}
+
+/* Profile, Contact, Education, and other sections */
+.box {
+  background-color: #fff;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: black;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+/* Skills Toggle */
+#skillsSection {
+  display: none;
+  margin-top: 15px;
+}
+
+#toggleCheckbox:checked + #toggleLabel + #skillsSection {
+  display: block;
+}
+
+#toggleLabel {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .box {
+      margin: 10px;
+      padding: 15px;
+  }
+  h2 {
+      font-size: 20px;
+  }
+}
